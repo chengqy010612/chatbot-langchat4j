@@ -1,14 +1,23 @@
 # LangChat4J 聊天机器人项目
 
-本项目基于 **langchat4j** 实现了一个功能完善的聊天机器人，拥有以下关键特性：
+本项目基于 **langchat4j** 实现了一个聊天机器人，拥有以下关键特性：
 
 * **基础聊天功能**：支持与用户进行自然语言对话。
 * **聊天记忆**：在单次对话中保留上下文，提升对话连贯性。
 * **记忆持久化**：将对话历史保存到本地/数据库，以便未来检索和分析。
 * **提示词管理**：支持自定义系统、用户、助手提示词。
 * **Function Calling**：通过 langchat4j 的 Function Calling 能力，调用外部或自定义函数。
-* **向量数据库整合**：集成 Pinecone/Weaviate/Milvus 等向量数据库，用于语义检索。
+* **向量数据库整合**：集成 Pinecone 向量数据库，用于语义检索。
 * **流式输出**：实时输出模型生成结果，提高用户体验。
+
+
+## 前端地址
+
+* 前端仓库: [https://github.com/chengqy010612/chatbot-langchat4j-frontend](https://github.com/chengqy010612/chatbot-langchat4j-frontend)
+
+## 视频参考
+
+* 参考视频: [https://www.bilibili.com/video/BV1cpLTz1EVp/](https://www.bilibili.com/video/BV1cpLTz1EVp/)
 
 ---
 
@@ -32,7 +41,7 @@
 
 ## 背景与动机
 
-随着对话式 AI 应用的普及，开发一个具备上下文记忆、插件调用、长时记忆管理等能力的机器人愈发重要。本项目基于 langchat4j 封装了一套完整的解决方案，帮助开发者快速创建高质量对话机器人。
+随着对话式 AI 应用的普及，开发一个具备上下文记忆、插件调用、长时记忆管理等能力的机器人愈发重要。本项目基于 langchat4j 做了一些应用，帮助开发者快速创建高质量对话机器人。
 
 ## 技术选型
 
@@ -133,14 +142,6 @@ langchat4j-bot/
 ├── pom.xml / build.gradle  # 构建配置
 └── README.md               # 项目说明
 ```
-
-## 前端地址
-
-* 前端仓库: [https://github.com/yourusername/langchat4j-frontend](https://github.com/yourusername/langchat4j-frontend)
-
-## 视频参考
-
-* 演示视频: [https://youtu.be/yourvideoid](https://youtu.be/yourvideoid)
 
 ## 配置说明
 
