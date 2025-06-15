@@ -27,7 +27,6 @@
 * [技术选型](#技术选型)
 * [功能特性](#功能特性)
 * [快速开始](#快速开始)
-
     * [环境要求](#环境要求)
     * [安装与配置](#安装与配置)
     * [运行示例](#运行示例)
@@ -45,13 +44,11 @@
 
 ## 技术选型
 
-| 组件         | 说明                              |
-| ---------- | ------------------------------- |
-| Java 17+   | 项目语言及运行时环境                      |
+| 组件       | 说明                             |
+| ---------- |--------------------------------|
 | langchat4j | 核心对话框架，支持 Function Calling、流式输出 |
-| 向量数据库      | 推荐 Pinecone/Weaviate/Milvus 等   |
-| 持久化存储      | 可选文件系统、SQLite、PostgreSQL 等      |
-| 日志与监控      | SLF4J + Logback                 |
+| 向量数据库 | 推荐 Pinecone 等                  |
+| 持久化存储 | mysql、mongodb 等                |
 
 ## 功能特性
 
@@ -88,39 +85,21 @@
 * Maven 或 Gradle
 * 网络连通以访问 LLM API
 
-### 安装与配置
+### 配置
 
-1. 克隆本仓库：
-
-   ```bash
-   git clone https://github.com/yourusername/langchat4j-bot.git
-   cd langchat4j-bot
-   ```
-2. 编辑 `src/main/resources/application.yml`：
+1. 配置环境变量
 
    ```yaml
-   openai:
-     apiKey: "YOUR_OPENAI_API_KEY"
-   vectorDb:
-     type: "pinecone"
-     endpoint: "YOUR_PINECONE_ENDPOINT"
-     apiKey: "YOUR_PINECONE_API_KEY"
-   memory:
-     persistence: "sqlite"
-     dbPath: "./data/memory.db"
+   DEEP_SEEK_API_KEY  阿里百联apikey
+   PINECONE_API_KEY   Pinecone apikey
    ```
-3. 安装依赖并打包：
+   
+3. 创建数据库
 
-    * Maven：
-
-      ```bash
-      mvn clean package
-      ```
-    * Gradle：
-
-      ```bash
-      gradle build
-      ```
+    ```bash
+    mongodb数据库  chat_memory_db
+    mysql数据库  guiguxiaozhi      root root 
+    ```
 
 ### 运行示例
 
