@@ -1,4 +1,4 @@
-# LangChat4J 聊天机器人项目
+# 硅谷小智聊天机器人项目
 
 本项目基于 **langchat4j** 实现了一个聊天机器人，拥有以下关键特性：
 
@@ -101,13 +101,6 @@
     mysql数据库  guiguxiaozhi      root root 
     ```
 
-### 运行示例
-
-```bash
-java -jar target/langchat4j-bot.jar
-```
-
-启动后访问 `http://localhost:8080/chat`，即可通过 Web 界面或 API 交互。
 
 ## 项目结构
 
